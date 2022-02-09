@@ -849,12 +849,13 @@ div h3 {
 }
 
 .total-form {
+  width: 448px;
   text-align: center;
   margin: 40px;
 }
 
 .form-title {
-  width: 448px;
+  width: 100%;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -876,6 +877,8 @@ div h3 {
 }
 .form-input {
   width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .form-input:focus,
