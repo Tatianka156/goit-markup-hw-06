@@ -866,9 +866,20 @@ div h3 {
 }
 
 .form-field {
+  position: relative;
   margin-top: 28px;
 }
 
-.form-input:focus + .form-label {
+.form-label {
+  position: absolute;
+  top: 10px;
+}
+.form-input {
+  width: 100%;
+}
+
+.form-input:focus,
+.form-input:hover {
   color: #2196f3;
+  fill: #2196f3;
 }
