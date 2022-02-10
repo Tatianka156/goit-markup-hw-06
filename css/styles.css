@@ -1,3 +1,5 @@
+/* Основные */
+
 :root {
   --main-background-color: #ffffff;
   --main-color-text: #212121;
@@ -32,6 +34,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Шапка сайта */
 
 .menu {
   border-bottom: 1px solid #ececec;
@@ -186,6 +190,8 @@ nav {
   margin-right: 10px;
 }
 
+/* Верхняя секция */
+
 .all-order {
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -239,6 +245,8 @@ nav {
   margin-top: 30px;
 }
 
+/* Принципы */
+
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -287,6 +295,8 @@ nav {
   margin-top: 10px;
 }
 
+/*Чем мы занимаемся*/
+
 .work {
   padding-top: 0px;
 }
@@ -333,6 +343,9 @@ nav {
   text-transform: uppercase;
   color: var(--main-color-text-darkbackground);
 }
+
+/*Наша команда*/
+
 .we {
   background: #f5f4fa;
 }
@@ -451,6 +464,8 @@ div h3 {
   border-radius: 50%;
 }
 
+/*Постоянные клиенты*/
+
 .clients-list {
   list-style-type: none;
   display: flex;
@@ -495,6 +510,8 @@ div h3 {
   display: flex;
   align-items: baseline;
 }
+
+/*Футер*/
 
 .footer-logo-contact {
   display: block;
@@ -611,6 +628,34 @@ div h3 {
   margin-left: 10px;
 }
 
+.subscribe {
+  margin-left: 93px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.form-subscribe {
+  margin-top: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 .button {
   cursor: pointer;
 
@@ -644,6 +689,8 @@ div h3 {
   border-radius: 4px;
 }
 
+/*Портфолио*/
+
 .all-buttons {
   min-width: 661px;
   margin: 0 auto;
@@ -666,6 +713,8 @@ div h3 {
   background-color: var(--main-background-color);
   color: var(--main-color-text);
 }
+
+/*Все*/
 
 .card-set {
   display: flex;
@@ -752,6 +801,7 @@ div h3 {
   margin-top: 10px;
 }
 
+/* Модальное окно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -813,12 +863,6 @@ div h3 {
   display: flex;
 }
 
-.subscribe {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
 .btn-submit {
   cursor: pointer;
   background-color: #2196f3;
@@ -834,9 +878,10 @@ div h3 {
 
   text-align: center;
 
-  min-width: 200px;
+  width: 200px;
+  margin-left: 12px;
+
   padding: 10px 28px;
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -850,7 +895,6 @@ div h3 {
 
 .total-form {
   width: 448px;
-  text-align: center;
   margin: 40px;
 }
 
@@ -860,6 +904,7 @@ div h3 {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
+  margin-bottom: 28px;
 }
 
 .form {
@@ -867,22 +912,53 @@ div h3 {
 }
 
 .form-field {
-  position: relative;
-  margin-top: 28px;
+  margin-left: 0;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
-  position: absolute;
-  top: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--second-color-text);
+  margin-right: auto;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-input {
   width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .form-label {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.form-textarea {
+  padding-left: 16px;
+  padding-top: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.form-input:focus,
-.form-input:hover {
-  color: #2196f3;
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-svg {
   fill: #2196f3;
 }
