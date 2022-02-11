@@ -985,10 +985,9 @@ div h3 {
 
 .checkbox-icon {
   display: block;
-  content: "";
   width: 16px;
   height: 15px;
-  background-image: url(/images/check-empty.svg);
+  background-image: url(../images/check-empty.svg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1006,7 +1005,7 @@ div h3 {
 
 .checkbox:checked + .checkbox-icon {
   background-color: transparent;
-  background-image: url(/images/check-full.svg);
+  background-image: url(../images/check-full.svg);
 }
 
 .text-checkbox {
