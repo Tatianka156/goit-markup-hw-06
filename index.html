@@ -364,8 +364,8 @@
                 </div>
                 <div class="footer-nets-links subscribe">                
                     <h3 class="header-join">Подпишитесь на рассылку</h3>
-                     <div class="form-subscribe">
-                           <form>
+                     
+                           <form class="footer-form">
                                <label>
                                    <input type="text" name="e-mail" class="footer-input" placeholder="E-mail">
                                 </label>
@@ -375,7 +375,7 @@
                                     </svg>
                              </button>
                           </form>
-                        </div>
+                     
                </div>   
         </div>
     </footer>
@@ -383,13 +383,13 @@
     <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
             <div class="modal">    
-                    <button type="button" class="btn-modal" data-modal-close>
+                <button type="button" class="btn-modal" data-modal-close>
                       <div class="btn-modal-svg">
                             <svg class="bnt-svg-close" width="11" height="11">
                              <use href="./images/sprite-hw4.svg#icon-close"></use>
                             </svg>
                       </div>         
-                    </button>
+                </button>
                     <div class="total-form">
                         <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
                        <form class="form">
@@ -426,19 +426,16 @@
                                 rows="8"
                                 placeholder="Введите текст"></textarea>                        
                         </form>
-
-                       
-                            <label class="checkbox-label">
-                                <input type="checkbox" class="checkbox" name="agree" value="agree"/>
+                     
+                          <label class="checkbox-label">
+                                <input type="checkbox" name="checkbox" class="checkbox"/>
                                 <span class="checkbox-icon"></span>
                                 <span class="text-checkbox">Соглашаюсь с рассылкой и принимаю</span> 
-                                <a href="">Условия договора</a>
-                                </label>
-                        </div>
-                        
-                        <button class="order" type="submit">Соглашаюсь</button>  
-                    </div>
-             </div>
+                                <a class="text-checkbox" href="">Условия договора</a>
+                            </label>                                           
+                            <button class="order" type="submit">Соглашаюсь</button>  
+                    </div>     
+            
     </div> 
     
     <script src="./js/modal.js"></script>
